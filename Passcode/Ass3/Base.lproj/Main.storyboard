@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ass3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="JL9-la-dd5">
+                                <rect key="frame" x="23" y="141.5" width="368" height="613.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-6g-Y3r">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="102.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPs-35-RQt">
+                                                <rect key="frame" x="124" y="0.0" width="120" height="85.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5wM-AF-RlT">
+                                                <rect key="frame" x="135" y="85.5" width="98" height="17"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79y-Ux-0Kx" customClass="PasscodeDotView" customModule="Ass3" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="79y-Ux-0Kx" secondAttribute="height" multiplier="1:1" id="b00-hC-SR4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnj-Ce-gTb" customClass="PasscodeDotView" customModule="Ass3" customModuleProvider="target">
+                                                        <rect key="frame" x="27" y="0.0" width="17" height="17"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-z3-blH" customClass="PasscodeDotView" customModule="Ass3" customModuleProvider="target">
+                                                        <rect key="frame" x="54" y="0.0" width="17" height="17"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nm4-p6-ocH" customClass="PasscodeDotView" customModule="Ass3" customModuleProvider="target">
+                                                        <rect key="frame" x="81" y="0.0" width="17" height="17"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nPs-35-RQt" firstAttribute="height" secondItem="5wM-AF-RlT" secondAttribute="height" multiplier="5" id="5bE-EH-FT8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="S0G-4m-g6a">
+                                        <rect key="frame" x="0.0" y="127.5" width="368" height="102.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcO-JT-kR2" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="102.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1:">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAl-BT-zs8" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="132.5" y="0.0" width="103" height="102.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="2:A B C">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFI-GM-4RJ" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="265.5" y="0.0" width="102.5" height="102.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="3:D E F">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kEj-GV-cgL">
+                                        <rect key="frame" x="0.0" y="255" width="368" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-po-H4a" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="103"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="4:G H I">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELd-Rb-peR" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="132.5" y="0.0" width="103" height="103"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="5:J K L">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR4-dx-jN5" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="265.5" y="0.0" width="102.5" height="103"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="6:M N O">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="uDL-Br-NId">
+                                        <rect key="frame" x="0.0" y="383" width="368" height="102.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-1m-yyG" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="102.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="7:P Q R S">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-o0-kvm" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="132.5" y="0.0" width="103" height="102.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="8:T U V">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovM-5x-baV" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="265.5" y="0.0" width="102.5" height="102.5"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="9:W X Y Z">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="baw-e4-42Z">
+                                        <rect key="frame" x="0.0" y="510.5" width="368" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdV-GP-m9j">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="103"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abR-zS-9EH" customClass="NumButtonView" customModule="Ass3" customModuleProvider="target">
+                                                <rect key="frame" x="132.5" y="0.0" width="103" height="103"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="0:">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drj-iD-mub">
+                                                <rect key="frame" x="265.5" y="0.0" width="102.5" height="103"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="deleteButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="I18-eq-9ya"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JL9-la-dd5" secondAttribute="height" multiplier="3:5" id="PN7-Nq-MV9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JL9-la-dd5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GPT-4w-MZe"/>
+                            <constraint firstItem="JL9-la-dd5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UKS-Qe-cJo"/>
+                            <constraint firstItem="JL9-la-dd5" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.75" id="taI-Sn-eWY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="drj-iD-mub" id="WXr-SO-sZ5"/>
+                        <outlet property="passcodeDot1" destination="79y-Ux-0Kx" id="dbk-TD-H3C"/>
+                        <outlet property="passcodeDot2" destination="qnj-Ce-gTb" id="JHd-Kl-HDg"/>
+                        <outlet property="passcodeDot3" destination="ENg-z3-blH" id="lu6-Y8-UPx"/>
+                        <outlet property="passcodeDot4" destination="Nm4-p6-ocH" id="Yi6-Zd-DeA"/>
+                        <outletCollection property="numButtons" destination="DAl-BT-zs8" collectionClass="NSMutableArray" id="vnz-xG-v6O"/>
+                        <outletCollection property="numButtons" destination="IFI-GM-4RJ" collectionClass="NSMutableArray" id="l0E-K4-LoU"/>
+                        <outletCollection property="numButtons" destination="8yX-po-H4a" collectionClass="NSMutableArray" id="VOs-b8-lSt"/>
+                        <outletCollection property="numButtons" destination="ELd-Rb-peR" collectionClass="NSMutableArray" id="aze-R3-j18"/>
+                        <outletCollection property="numButtons" destination="gR4-dx-jN5" collectionClass="NSMutableArray" id="t8X-39-Qkg"/>
+                        <outletCollection property="numButtons" destination="pcZ-1m-yyG" collectionClass="NSMutableArray" id="p9n-52-O6s"/>
+                        <outletCollection property="numButtons" destination="ovM-5x-baV" collectionClass="NSMutableArray" id="PYE-h5-U8a"/>
+                        <outletCollection property="numButtons" destination="abR-zS-9EH" collectionClass="NSMutableArray" id="ueI-tV-aji"/>
+                        <outletCollection property="numButtons" destination="2eM-o0-kvm" collectionClass="NSMutableArray" id="j7q-NP-FKE"/>
+                        <outletCollection property="numButtons" destination="lcO-JT-kR2" collectionClass="NSMutableArray" id="dQf-Nl-eLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+        <!--Home Screen Controller-->
+        <scene sceneID="7Eg-nE-wdB">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreenController" id="Z4d-Z8-jve" customClass="HomeScreenController" customModule="Ass3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezq-DG-3fg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YrW-xQ-CB1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sV-l2-b9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
